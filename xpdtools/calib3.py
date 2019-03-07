@@ -17,7 +17,8 @@ filename = 'Ni_pin_20181101-075909_973de2_0001.tiff'
 #row is constant and column index goes from col index of center to end
 
 def findrings(file_name):
-	
+	'''wrapping function for findrings
+	'''
 	image=tf.imread(file_name)
 	class Slyce():
 		def __init__(self,direction,index,image):
